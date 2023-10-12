@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./Components/Header/Header";
 import MainTitle from "./Components/MainTitle/MainTitle";
-import EventDetails from "./Components/EventDetails/EventDetails";
 import EventDescription from "./Components/EventDescription/EventDescription";
 import Prizes from "./Components/Prizes/Prizes";
 import Schedule from "./Components/Schedule/Schedule";
@@ -16,10 +15,10 @@ export const App = () => {
     <>
       <Header />
       <MainTitle />
-      <EventDetails />
+      <Schedule />
       <EventDescription />
       <Prizes />
-      <Schedule />
+
       <TargetAudience />
       <Registration />
       <ContactInfo />

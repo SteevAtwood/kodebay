@@ -41,6 +41,12 @@ const config: Configuration = {
         },
       },
       {
+        test: /\.(jpg|png)$/,
+        use: {
+          loader: "url-loader",
+        },
+      },
+      {
         test: /.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -85,7 +91,7 @@ const config: Configuration = {
     new HtmlWebpackPlugin({
       template: "src/index.html",
     }),
-    
+
     new HotModuleReplacementPlugin(),
     //    new ForkTsCheckerWebpackPlugin({
     //      async: false,

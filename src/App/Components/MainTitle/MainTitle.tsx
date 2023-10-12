@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./MainTitle.scss";
-import SVG from "react-inlinesvg";
-import colosseum from "../../Assets/colosseum.svg";
 import { Timer } from "../Timer/Timer";
+import main from "../../Assets/main.jpg";
 
 const MainTitle: React.FC = () => {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
@@ -34,10 +33,14 @@ const MainTitle: React.FC = () => {
           Присоединяйтесь к международным CTF-соревнованиям по
           кибербезопасности!
         </h2>
+        <Timer leftTime={timeRemaining} />
       </div>
       <div className={styles["imageContainer"]}>
-        <SVG src={colosseum} className={styles["svgImage"]} />
-        <Timer leftTime={timeRemaining} />
+        <img
+          style={{ width: "400px" }}
+          src={main}
+          alt="torchlight in the sky"
+        />
       </div>
     </div>
   );
