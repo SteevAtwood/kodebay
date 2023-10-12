@@ -2,22 +2,65 @@
 
 .prizeItem {
   background-color: $card-background;
-  padding: 15px 25px;
+  padding: 45px 45px;
   border-radius: 10px;
   margin-bottom: 20px;
   text-align: center;
+  margin: 5px;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.svg-style {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #062849;
 }
 
 .discount {
   text-align: center;
   margin-top: 10px;
   font-style: italic;
+  color: rgb(208, 206, 206);
 }
 
+.center-box {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: none;
+}
+
+.otherPrizeItem {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 @media only screen and (max-width: 1000px) and (max-device-width: 1000px) {
+  .center-box {
+    flex-direction: column;
+  }
   .prizeItem {
     font-size: 20px;
+  }
+  .otherPrizeItem {
+    order: 2; 
+  }
+
+  .svg-style {
+    top: 0; 
+    left: -10px;
   }
 }
 
