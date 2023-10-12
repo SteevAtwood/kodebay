@@ -65,6 +65,8 @@
 
   .svgImage {
     width: 100px;
+    margin-bottom: 5px;
+    order: 2;
   }
 
   .container {
@@ -81,9 +83,5 @@
   .imageContainer {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .svgImage {
-    margin-bottom: 5px;
   }
 }

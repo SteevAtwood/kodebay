@@ -36,8 +36,8 @@ const MainTitle: React.FC = () => {
         </h2>
       </div>
       <div className={styles["imageContainer"]}>
-        <Timer leftTime={timeRemaining} />
         <SVG src={colosseum} className={styles["svgImage"]} />
+        <Timer leftTime={timeRemaining} />
       </div>
     </div>
   );
