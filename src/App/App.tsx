@@ -13,7 +13,7 @@ import Footer from "./Components/Footer/Footer";
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <MainTitle />
       <EventDetails />
@@ -25,6 +25,6 @@ export const App = () => {
       <ContactInfo />
       <FAQ />
       <Footer />
-    </div>
+    </>
   );
 };

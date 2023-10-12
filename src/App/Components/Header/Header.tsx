@@ -5,7 +5,7 @@ import logo from "../../Assets/logo2.svg";
 
 const Header: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles["header-container-fixed"]}>
       <header className={styles.header}>
         <SVG src={logo} className={styles["logo"]} />
         <div className={styles["middle"]}>
