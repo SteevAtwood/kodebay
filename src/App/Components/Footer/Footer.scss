@@ -1,44 +1,71 @@
 @import "../../App.scss";
 
 .footer {
-    background-color: #020a33;
-    color: #ccc;
-    padding: 20px 0;
+  background-color: #020a33;
+  color: #ccc;
+  padding: 20px 0;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        max-width: 80%;
-        margin: 0 auto;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+        color: #ccc;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #fff;
+        }
+      }
     }
+  }
+
+  .copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 1000px) and (max-device-width: 1000px) {
+  .footer {
+    padding: 10px 0; 
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column; 
+    
 
     h4 {
-        font-size: 1.2em;
-        margin-bottom: 15px;
+      font-size: 1em; 
+      margin-bottom: 10px;
     }
 
     ul {
-        list-style-type: none;
-        padding: 0;
-
-        li {
-            margin-bottom: 10px;
-
-            a {
-                text-decoration: none;
-                color: #ccc;
-                transition: color 0.2s;
-
-                &:hover {
-                    color: #fff;
-                }
-            }
-        }
+      li {
+        margin-bottom: 5px;
+        text-align: center; 
+      }
     }
 
     .copy {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 0.9em;
+      margin-top: 10px; 
     }
+  }
 }

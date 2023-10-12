@@ -14,7 +14,7 @@ const Header: React.FC = () => {
             Бесплатно по России: 8 800 444 17 50
           </div>
         </div>
-        <div className={styles["cta-button"]}>Записаться на курс</div>
+        <div className={styles["cta-button"]}>Зарегистрироваться сейчас!</div>
       </header>
     </div>
   );
