@@ -33,15 +33,19 @@ export const Timer = (props: TimerProps) => {
     const intTime = Math.floor(time);
     const seconds = String(intTime % 60).padStart(2, "0");
     const minutes = String(Math.floor((intTime / 60) % 60)).padStart(2, "0");
-    const hours = String(Math.floor(intTime / 3600)).padStart(2, "0");
+    const hours = String(Math.floor(intTime / 3600) % 24).padStart(2, "0");
+    const days = String(Math.floor(intTime / 86400)).padStart(2, "0");
 
-    return `${hours}:${minutes}:${seconds}`;
+    return [days, hours, minutes, seconds];
   };
 
   return (
     <div className={styles["timer"]}>
       <SVG src={timer} className={styles["red-svg"]} />
-      <p>{formatTime(remainingTime)}</p>
+      <p>{formatTime(remainingTime)[0]}</p>
+      <p>{formatTime(remainingTime)[1]}</p>
+      <p>{formatTime(remainingTime)[2]}</p>
+      <p>{formatTime(remainingTime)[3]}</p>
     </div>
   );
 };
