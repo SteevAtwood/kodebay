@@ -7,12 +7,14 @@ const EventDetails: React.FC = () => {
       <h2 className={styles["heading"]}>Дата и место проведения</h2>
       <div className={styles["details"]}>
         <div className={styles["left-box"]}>
-          Дата: <br />
-          <br />- 11 ноября, 10:00 МСК
+          <span className={styles["date-place-label"]}>Дата:</span>
+          <br />
+          <br /> - 11 ноября, 10:00 МСК
         </div>
         <div className={styles["right-box"]}>
-          Место проведения: <br />
-          <br />- Онлайн на платформе Codeby Games
+          <span className={styles["date-place-label"]}>Место проведения:</span>
+          <br />
+          <br /> - Онлайн на платформе Codeby Games
         </div>
       </div>
     </div>
