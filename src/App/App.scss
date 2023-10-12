@@ -16,6 +16,7 @@ body {
 
 .header {
   display: flex;
+  background-color: $background;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10px;
@@ -52,6 +53,7 @@ body {
     &:hover {
       background-color: $main-hover;
     }
+    color: $main;
     width: 196px;
     margin: 0;
     padding: 15px;
