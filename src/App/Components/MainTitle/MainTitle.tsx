@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./MainTitle.scss";
 import SVG from "react-inlinesvg";
 import colosseum from "../../Assets/colosseum.svg";
+import { Timer } from "../Timer/Timer";
 
 const MainTitle: React.FC = () => {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
@@ -22,16 +23,9 @@ const MainTitle: React.FC = () => {
       targetDate.setFullYear(targetDate.getFullYear() + 1);
     }
 
-    const timeDifference = targetDate - now;
-    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor(
-      (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
-    );
+    const timeDifference = targetDate.getTime() - now.getTime();
 
-    return `${days}д : ${hours}ч : ${minutes}м`;
+    return timeDifference / 1000;
   }
 
   return (
@@ -45,7 +39,7 @@ const MainTitle: React.FC = () => {
       </div>
       <div className={styles["imageContainer"]}>
         <SVG src={colosseum} className={styles["svgImage"]} />
-        <div className={styles["timer"]}>{timeRemaining}</div>
+        <Timer leftTime={timeRemaining} />
       </div>
     </div>
   );
