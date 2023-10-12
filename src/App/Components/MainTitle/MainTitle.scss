@@ -29,22 +29,22 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  margin-right: 20%;
 }
 
 .imageContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .timer {
   font-size: 0.9rem;
   color: #d35400;
   background-color: #020a33;
-  padding: 10px 20px;
+  margin-left: 10px;
+  margin-right: 20px;
   border-radius: 8px;
   border: 2px solid #d35400;
   margin-top: 15px;
