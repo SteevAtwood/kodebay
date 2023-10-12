@@ -1,7 +1,14 @@
+$body-color: #fff;
+$background: #010922;
+$main: #d35400;
+$main-hover: rgba(211, 84, 0, 0.7);
+$box-shadow: rgba(255, 255, 255, 0.05);
+$card-background: #02203c;
+
 body {
-  background-color: #010922; /* темно-синий фон */
+  background-color: $background; /* темно-синий фон */
   font-family: Arial, sans-serif;
-  color: #fff;
+  color: $body-color;
 }
 
 .header {
@@ -9,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10px;
-  background: #010922;
+  background: $background;
   border-radius: 8px;
 
   .logo {
@@ -29,11 +36,11 @@ body {
     }
 
     .email {
-      color: #ccc;
+      color: $body-color;
     }
 
     .phone {
-      color: #fff;
+      color: $body-color;
     }
   }
 
@@ -41,13 +48,13 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
-    background-color: #d35400;
-    color: #fff;
+    background-color: $main;
+    color: $body-color;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
 
     &:hover {
-      background-color: rgba(211, 84, 0, 0.7);
+      background-color: $main-hover;
     }
   }
 }
@@ -64,7 +71,7 @@ body {
   margin-top: 60px;
   margin-bottom: 30px;
   font-size: 1.9rem;
-  color: #c1b7af;
+  color: $body-color;
 }
 
 .details {
@@ -82,12 +89,12 @@ body {
 
 .left-box,
 .right-box {
-  background-color: #02203c;
+  background-color: $card-background;
   padding: 15px 25px;
   border-radius: 15px;
   flex: 1;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 8px $box-shadow;
   min-width: 150px;
 }
 
@@ -98,26 +105,22 @@ body {
 }
 
 .center-box {
-  background-color: #02203c;
+  background-color: $background;
   padding: 20px 30px;
   border-radius: 15px;
   max-width: 75%;
   margin: 0 auto;
   text-align: center;
   margin: 30px auto;
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 6px 12px $box-shadow;
 }
 
 .cta-button {
   padding: 10px 20px;
   border: none;
   border-radius: 25px;
-  background-color: #d35400;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
-
+  background-color: $main;
   &:hover {
-    background-color: rgba(211, 84, 0, 0.7);
+    background-color: $main-hover;
   }
 }
