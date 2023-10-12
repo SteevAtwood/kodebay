@@ -2,12 +2,13 @@
   "name": "certification",
   "version": "0.0.1",
   "scripts": {
-    "start": "npx webpack serve --port 80 --mode development --config webpack.dev.config.ts",
+    "start": "npx webpack serve --port 8082 --mode development --config webpack.dev.config.ts",
     "build": "webpack --config webpack.prod.config.ts",
     "test": "jest --coverage"
   },
   "dependencies": {
     "css-loader": "^6.7.1",
+    "eslint-config-next": "^12.1.7-canary.35",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss-loader": "^7.0.1",

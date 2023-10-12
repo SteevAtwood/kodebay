@@ -1,29 +1,117 @@
+body {
+  background-color: #010922; /* темно-синий фон */
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
 .header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 30px 10px;
+  background: #010922; 
+  border-radius: 8px; 
+  
+  .logo {
+    width: 250px; 
+    height: auto;
+  }
+
+  .middle {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  
-    .logo {
-      width: 50px; 
-      height: auto;
+    gap: 20px;
+
+    .email, .phone {
+      font-size: 1em;
+      margin: 0;
     }
-  
-    .title {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-  
+
     .email {
-      font-size: 1em;
-      color: #666; 
+      color: #ccc; 
     }
-  
+
     .phone {
-      font-size: 1em;
-      color: #444;
+      color: #fff;
+    }
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d35400; 
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  
+    &:hover {
+      background-color: rgba(211, 84, 0, 0.7); 
     }
   }
   
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.heading {
+  width: 100%; 
+  text-align: center;  
+  margin-top: 60px; 
+  margin-bottom: 30px; 
+  font-size: 1.9rem; 
+  color: #c1b7af; 
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 80%; 
+}
+
+.left-box, .right-box {
+  background-color: #02203c;
+  padding: 15px 25px;
+  border-radius: 15px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  min-width: 150px;
+}
+
+.left-box {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.center-box {
+  background-color: #02203c;
+  padding: 20px 30px;
+  border-radius: 15px;
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  margin: 30px auto;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.05);
+}
+
+
+.cta-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #d35400; 
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: rgba(211, 84, 0, 0.7); 
+  }
+}
