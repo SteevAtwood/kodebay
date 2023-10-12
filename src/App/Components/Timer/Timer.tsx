@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SVG from "react-inlinesvg";
-import timer from "../../../Assets/timer.svg";
 import styles from "./Timer.scss";
 
 type TimerProps = {
@@ -41,11 +39,18 @@ export const Timer = (props: TimerProps) => {
 
   return (
     <div className={styles["timer"]}>
-      <SVG src={timer} className={styles["red-svg"]} />
-      <p>{formatTime(remainingTime)[0]}</p>
-      <p>{formatTime(remainingTime)[1]}</p>
-      <p>{formatTime(remainingTime)[2]}</p>
-      <p>{formatTime(remainingTime)[3]}</p>
+      <div className={styles["timer-row"]}>
+        <p className={styles["timer-card"]}>{formatTime(remainingTime)[0]}</p>
+        <p className={styles["timer-card"]}>{formatTime(remainingTime)[1]}</p>
+        <p className={styles["timer-card"]}>{formatTime(remainingTime)[2]}</p>
+        <p className={styles["timer-card"]}>{formatTime(remainingTime)[3]}</p>
+      </div>
+      <div className={styles["timer-row"]}>
+        <p className={styles["timer-text"]}>Дней</p>
+        <p className={styles["timer-text"]}>Часов</p>
+        <p className={styles["timer-text"]}>Минут</p>
+        <p className={styles["timer-text"]}>Секунд</p>
+      </div>
     </div>
   );
 };

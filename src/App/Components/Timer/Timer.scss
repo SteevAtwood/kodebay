@@ -5,6 +5,29 @@
   height: auto;
 }
 
+.timer-card {
+  background-color: $timer-card;
+  border-radius: 4px;
+  color: $body-color;
+  height: 40px;
+  width: 35px;
+  font-size: large;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.timer-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.timer-text {
+  font-size: small;
+}
 .timer {
   font-size: 0.9rem;
   color: $main;
@@ -16,7 +39,7 @@
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }

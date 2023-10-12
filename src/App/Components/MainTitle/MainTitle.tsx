@@ -18,13 +18,11 @@ const MainTitle: React.FC = () => {
   function getTimeRemaining() {
     const now = new Date();
     const targetDate = new Date("November 11, 2023 9:00:00");
-    console.log(targetDate);
     if (now > targetDate) {
       targetDate.setFullYear(targetDate.getFullYear() + 1);
     }
 
     const timeDifference = targetDate.getTime() - now.getTime();
-    console.log(timeDifference / 1000);
     return timeDifference / 1000;
   }
 
