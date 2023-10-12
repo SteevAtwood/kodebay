@@ -1,0 +1,25 @@
+@import "../../App.scss";
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.question {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.answer {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
