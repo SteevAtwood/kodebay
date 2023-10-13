@@ -10,7 +10,7 @@ const TargetAudience: React.FC = () => {
   return (
     <div className={styles["container"]}>
       <h2 className={styles["heading"]}>Для кого</h2>
-      <div className={styles["center-box"]}>
+      <div className={styles["center-box-audience"]}>
         <div className={styles["details"]}>
           <ul className={styles["target-audience-list"]}>
             <li>
