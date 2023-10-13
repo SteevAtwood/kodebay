@@ -20,7 +20,7 @@ const Prizes: React.FC = () => {
         </div>
         <div className={styles["prizeItem"]}>
           <SVG src={trophy3} className={styles["svg-style"]} />
-          3-е место: 30,000 руб, сертификат участника, мерч Codeby
+          3-тье место: 30,000 руб, сертификат участника, мерч Codeby
         </div>
       </div>
       <div className={styles["otherPrizeItem"]}>
