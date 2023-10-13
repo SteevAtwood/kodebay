@@ -16,7 +16,7 @@ const EventDescription: React.FC = () => {
           <p>- Формат: Jeopardy (Classic)</p>
           <p>- Соревнования проходят в онлайн-формате</p>
         </div>
-        <img style={{ width: "400px" }} src={two} alt="torchlight in the sky" />
+        <img src={two} alt="torchlight in the sky" />
       </div>
     </div>
   );

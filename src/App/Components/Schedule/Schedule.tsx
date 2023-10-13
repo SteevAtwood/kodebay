@@ -8,7 +8,7 @@ const Shedule: React.FC = () => {
       <h2 className={styles["heading"]}>Когда</h2>
 
       <div className={styles["details"]}>
-        <img style={{ width: "400px" }} src={one} alt="torchlight in the sky" />
+        <img src={one} alt="torchlight in the sky" />
 
         <div className={styles["right-box"]}>
           <span className={styles["date-place-label"]}> Место проведения</span>

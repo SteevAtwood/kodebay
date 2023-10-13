@@ -165,6 +165,10 @@ ul {
   }
 }
 
+img {
+  width: 400px;
+}
+
 @media only screen and (max-width: 1000px) and (max-device-width: 1000px) {
   .header {
     flex-direction: row;
@@ -189,7 +193,6 @@ ul {
 
   .details {
     flex-direction: column;
-    max-width: 100%;
     padding: 2px;
     width: 100%;
     font-size: 20px;
@@ -201,13 +204,16 @@ ul {
   }
 
   .left-box {
-    margin-bottom: 10px;
-    margin-right: 0;
-  }
-
-  .left-box {
     &:not(:last-child) {
       margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .right-box {
+    &:not(:first-child) {
+      margin-top: 10px;
+      margin-left: 0;
     }
   }
 
@@ -218,4 +224,9 @@ ul {
   ul {
     text-align: left;
   }
+
+  img {
+    width: 100%;
+  }
+
 }
