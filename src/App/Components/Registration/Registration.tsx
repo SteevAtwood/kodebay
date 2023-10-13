@@ -7,14 +7,17 @@ const Registration: React.FC = () => {
       <h2 className={styles["heading"]}>Регистрация</h2>
       <div className={styles["center-box"]}>
         <div className={styles["details"]}>
-          <p>
-            Переходи на Codeby Games, выбирай вкладку &apos;Киберколизей&apos; и
-            регистрируй свою команду. Ждём тебя на старте!
-          </p>
-
-          <button className={styles["cta-button"]}>
-            Зарегистрироваться сейчас!
-          </button>
+          <div className={styles["text-container"]}>
+            <p> - Переходи на Codeby Games</p>
+            <p> - Выбирай вкладку &apos;Киберколизей&apos; </p>
+            <p> - Регистрируй свою команду. </p>
+            <p className={styles["date-place-label"]}>Ждём тебя на старте!</p>
+          </div>
+          <div className={styles["button-container"]}>
+            <button className={styles["cta-button"]}>
+              Зарегистрироваться сейчас!
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -48,29 +48,6 @@ body {
       color: $body-color;
     }
   }
-
-  .cta-button {
-    padding: 10px 20px;
-    background-color: $background;
-    &:hover {
-      background-color: $main-hover;
-    }
-    color: $main;
-    width: 196px;
-    margin: 0;
-    padding: 15px;
-    text-align: center;
-    font-size: 14px;
-    font-family: "GILROY", Arial, sans-serif;
-    line-height: 1.15;
-    font-weight: 600;
-    border-width: 1px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: $main;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-      background-color 0.2s ease-in-out;
-  }
 }
 
 .container {
@@ -103,6 +80,72 @@ body {
   justify-content: space-between;
   margin: 20px auto;
   max-width: 80%;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: $background;
+  &:hover {
+    background-color: $main-hover;
+  }
+  color: $main;
+  width: 196px;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "GILROY", Arial, sans-serif;
+  line-height: 1.15;
+  font-weight: 600;
+  border-width: 1px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: $main;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+}
+
+.left-box,
+.right-box {
+  background-color: $card-background;
+  padding: 45px 55px;
+  border-radius: 15px;
+  flex: 1;
+  text-align: left;
+  box-shadow: 0 4px 8px $box-shadow;
+  min-width: 250px;
+
+  > span:not(.date-place-label) {
+    font-size: 1rem;
+  }
+}
+
+.left-box {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  p {
+    line-height: 1.6;       
+    margin-bottom: 10px;    
+  }
+}
+
+.center-box {
+  background-color: $card-background;
+  padding: 20px 30px;
+  border-radius: 15px;
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  margin: 30px auto;
+  box-shadow: 0 6px 12px $box-shadow;
+}
+
+.date-place-label {
+  font-size: 1.2em;
+  color: $main; 
+  font-weight: bold; 
 }
 
 @media only screen and (max-width: 1000px) and (max-device-width: 1000px) {
@@ -152,43 +195,5 @@ body {
     text-align: left;
   }
 
-}
-
-.left-box,
-.right-box {
-  background-color: $card-background;
-  padding: 45px 55px;
-  border-radius: 15px;
-  flex: 1;
-  text-align: left;
-  box-shadow: 0 4px 8px $box-shadow;
-  min-width: 250px;
-
-  > span:not(.date-place-label) {
-    font-size: 1rem;
-  }
-}
-
-.left-box {
-  &:not(:last-child) {
-    margin-right: 25px;
-  }
-}
-
-.center-box {
-  background-color: $card-background;
-  padding: 20px 30px;
-  border-radius: 15px;
-  max-width: 75%;
-  margin: 0 auto;
-  text-align: center;
-  margin: 30px auto;
-  box-shadow: 0 6px 12px $box-shadow;
-}
-
-.date-place-label {
-  font-size: 1.2em;
-  color: $main; 
-  font-weight: bold; 
 }
 

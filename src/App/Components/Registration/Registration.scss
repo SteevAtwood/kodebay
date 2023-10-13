@@ -1,1 +1,19 @@
 @import "../../App.scss"; 
+
+.details {
+  .text-container,
+  .button-container {
+    flex: 1; 
+  }
+
+  .text-container {
+    text-align: left;
+
+  }
+  
+  .button-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  }
+}
