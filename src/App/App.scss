@@ -7,6 +7,7 @@ $main-hover: rgba(211, 84, 0, 0.7);
 $box-shadow: rgba(255, 255, 255, 0.05);
 $card-background: #02203c;
 $timer-card: #3b668f;
+$font-size: 18px;
 
 body {
   background-color: $background; /* темно-синий фон */
@@ -64,6 +65,7 @@ body {
   font-family: "GILROY", Arial, sans-serif;
   line-height: 1.4;
   font-weight: 400;
+  z-index: 1;
 }
 
 .heading {
@@ -126,8 +128,8 @@ body {
   }
 
   p {
-    line-height: 1.6;       
-    margin-bottom: 10px;    
+    line-height: 1.6;
+    margin-bottom: 10px;
   }
 }
 
@@ -144,8 +146,17 @@ body {
 
 .date-place-label {
   font-size: 1.2em;
-  color: $main; 
-  font-weight: bold; 
+  color: $main;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  li {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 1000px) and (max-device-width: 1000px) {
@@ -154,15 +165,15 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px 20px;
-    
+
     .logo {
-      width: 150px; 
+      width: 150px;
       height: auto;
       margin-bottom: 10px;
     }
 
     .cta-button {
-      width: auto; 
+      width: auto;
     }
   }
 
@@ -178,15 +189,22 @@ body {
     font-size: 20px;
   }
   .container {
-    max-width: 100%; 
-    margin: 0; 
+    max-width: 100%;
+    margin: 0;
     padding: 8px;
   }
 
   .left-box {
     margin-bottom: 10px;
+    margin-right: 0;
   }
 
+  .left-box {
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+  
   .heading {
     margin-top: 30px;
   }
@@ -194,6 +212,4 @@ body {
   ul {
     text-align: left;
   }
-
 }
-
