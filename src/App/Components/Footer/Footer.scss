@@ -1,25 +1,42 @@
 @import "../../App.scss";
 
 .footer {
-  background-color: #020a33;
-  color: #ccc;
-  padding: 20px 0;
+  background-color: $background; 
+  color: rgba($body-color, 0.6);
+  padding: 10px 0;
+  position: relative;
+  margin-top: 100px; 
+
+  &::before {  
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 15%;
+    right: 15%;
+    height: 2px; 
+    background-color: $main;
+    opacity: 0.6;
+  }
 
   .container {
     display: flex;
     justify-content: space-between;
-    max-width: 80%;
+    max-width: 63%; 
     margin: 0 auto;
+    width: 100%; 
   }
 
   h4 {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    color: white;
+    font-size: 1.1em; 
+    margin-bottom: 10px;
+    color: $main; 
+    padding-bottom: 8px;
+  }
 
-    p {
-        color: white;
-    }
+  p, ul li a {
+    font-size: 0.85em; 
+    color: rgba($body-color, 0.6);
+    margin-bottom: 4px;
   }
 
   ul {
@@ -27,15 +44,15 @@
     padding: 0;
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 4px;
 
       a {
         text-decoration: none;
-        color: #ccc;
+        color: rgba($body-color, 0.6);
         transition: color 0.2s;
 
         &:hover {
-          color: #fff;
+          color: $main; 
         }
       }
     }
@@ -43,34 +60,29 @@
 
   .copy {
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
+    margin-top: 10px;
+    font-size: 0.8em; 
   }
 }
+
 @media only screen and (max-width: 1000px) and (max-device-width: 1000px) {
   .footer {
-    padding: 10px 0; 
+    padding: 20px 0; 
     text-align: center;
   }
 
   .container {
     flex-direction: column; 
-    
+    gap: 15px;
 
     h4 {
-      font-size: 1em; 
-      margin-bottom: 10px;
+      font-size: 1.1em;
+      margin-bottom: 10px; 
     }
+  }
 
-    ul {
-      li {
-        margin-bottom: 5px;
-        text-align: center; 
-      }
-    }
-
-    .copy {
-      margin-top: 10px; 
-    }
+  .footer::before {
+    left: 5%;
+    right: 5%;
   }
 }
