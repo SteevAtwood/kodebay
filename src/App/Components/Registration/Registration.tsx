@@ -10,7 +10,7 @@ const Registration: React.FC = () => {
           <div className={styles["text-container"]}>
             <p> - Переходи на Codeby Games</p>
             <p> - Выбирай вкладку &apos;Киберколизей&apos; </p>
-            <p> - Регистрируй свою команду. </p>
+            <p> - Регистрируй свою команду </p>
             <p className={styles["date-place-label"]}>Ждём тебя на старте!</p>
           </div>
           <div className={styles["button-container"]}>
