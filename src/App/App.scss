@@ -133,6 +133,12 @@ body {
   }
 }
 
+.right-box {
+  &:not(:first-child) {
+    margin-left: 25px;
+  }
+}
+
 .center-box {
   background-color: $card-background;
   padding: 20px 30px;
